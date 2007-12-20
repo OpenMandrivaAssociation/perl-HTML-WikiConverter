@@ -19,6 +19,7 @@ BuildRequires:  perl(URI)
 BuildRequires:  perl(HTML::Tree)
 BuildRequires:  perl(CSS)
 BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description
 HTML::WikiConverter is an HTML to wiki converter. It can convert HTML
