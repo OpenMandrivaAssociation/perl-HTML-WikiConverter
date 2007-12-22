@@ -11,13 +11,11 @@ License:        GPL or Artistic
 Group:          Development/Perl
 Url:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/HTML/%{module}-%{version}.tar.bz2
-%if %{mdkversion} < 1010
-BuildRequires:  perl-devel
-%endif
 BuildRequires:  perl(HTML::Parser)
 BuildRequires:  perl(URI)
 BuildRequires:  perl(HTML::Tree)
 BuildRequires:  perl(CSS)
+BuildRequires:  perl(Params::Validate)
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}
 
