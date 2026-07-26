@@ -1,15 +1,13 @@
 %define upstream_name    HTML-WikiConverter
-%define upstream_version 0.68
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	5
+Version:	0.68
+Release:	6
 
 Summary:	HTML-WikiConverter - An HTML to wiki markup converter
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/HTML-WikiConverter
-Source0:	https://cpan.metacpan.org/authors/id/D/DI/DIBERRI/HTML-WikiConverter-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/D/DI/DIBERRI/HTML-WikiConverter-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -25,7 +23,7 @@ HTML::WikiConverter is an HTML to wiki converter. It can convert HTML
 source into a variety of wiki markups, called wiki "dialects".
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -47,9 +45,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %changelog
 * Wed Jul 29 2009 JÃ©rÃ´me Quelin <jquelin@mandriva.org> 0.680.0-1mdv2010.0
 + Revision: 403265
-- rebuild using %%perl_convert_version
-
-* Fri May 01 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.68-1mdv2010.0
+- rebuild using %0.68 Fri May 01 2009 Guillaume Rousse <guillomovitch@mandriva.org> 0.68-1mdv2010.0
 + Revision: 370130
 - update to new version 0.68
 
